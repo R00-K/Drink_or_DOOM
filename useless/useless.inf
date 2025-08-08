@@ -1,0 +1,28 @@
+[Defines]
+  INF_VERSION                    = 0x00010017
+  BASE_NAME                      = useless
+  FILE_GUID                      = 12345678-9abc-def0-1234-56789abcdef0
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = efi_main
+
+[Sources]
+  useless.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  UefiBootServicesTableLib
+  DevicePathLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  FileHandleLib
+  ShellCEntryLib
+
+[Protocols]
+  gEfiLoadedImageProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+
