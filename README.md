@@ -6,6 +6,12 @@
 
 ## 📜 Project Description
 This project has **two main components**:
+At its core, Drink or DOOM is a gloriously over-engineered solution to a problem nobody really needed solved — reminding you to drink water. Sure, there are plenty of apps and timers that do this quietly and politely. But where’s the fun in that?
+
+Instead of a gentle nudge, this project goes full drama mode: it actually messes with your computer’s boot process (in the tested, controlled environment, of course). If you ignore your hydration reminder, your machine gives you a digital guilt trip every time you reboot.
+
+It’s a perfect blend of high-tech wizardry, harmless sabotage, and cheeky motivation. So while it’s technically useful — it’s mostly useless because nobody wants their bootloader replaced over a glass of water. But hey, if you do, here’s your chance!
+
 
 1. **Custom UEFI App** – Built using the [EDK II](https://github.com/tianocore/edk2) environment.  
    - When run at boot, it checks a `flag.bin` file in the EFI System Partition (ESP) and reacts accordingly.  
